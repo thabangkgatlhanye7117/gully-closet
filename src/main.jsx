@@ -1,14 +1,18 @@
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
-import './index.css'
+import './styles/index.css'
+import './styles/layout.css'
+import './styles/footer.css'
 import Layout from './Layout.jsx'
+import HomePage from './pages/HomePage'
+import 'remixicon/fonts/remixicon.css'
 
 const router = createBrowserRouter([
 {
-  path: "/", element: "Layout",
+  path: "/", element: <Layout/>,
   children : [
-    {/*index: true , element: ,<HomePage/> */},
+    { index: true , element: <HomePage/> },
   ]
 
 }
