@@ -8,6 +8,7 @@ header {
   width: 100%;
   height: 80px;
   border-bottom: 1px solid black;
+  z-index: 9999;
   
 
 }
@@ -33,6 +34,7 @@ header {
 
 nav {
   display: flex;
+  position: relative;
   align-items: center;
   width: 100%;
   height: 40px;
@@ -49,7 +51,8 @@ nav {
   right: -100%;
   background-color:rgb(231, 231, 231);
   padding: 1rem;
-  z-index: 100;
+  z-index: 9999;
+  
 
 }
 
@@ -78,15 +81,15 @@ nav {
   height: 35px;
   align-items: center;
   white-space: nowrap;
-  animation: scrollLeft 15s linear infinite;
+  animation: scrollLeft 12s linear infinite;
 }
 
 @keyframes scrollLeft {
-  0% {
-    transform: translate(-100%)
+  from {
+    transform: translate(0%)
   }
-  100% {
-    transform: translate(100%);
+  to {
+    transform: translate(-100%);
   }
 }
 .brand-name{
@@ -113,7 +116,8 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  z-index: 1;
+  z-index: 0;
+
   
 }
 .footer-info{
