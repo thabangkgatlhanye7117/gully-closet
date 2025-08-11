@@ -90,6 +90,15 @@ import { useState } from "react"
             <span className="brand-name">North Face</span>
             <span className="brand-name">Comme des Garcons</span>
             <span className="brand-name">Air Jordan</span>
+            <span className="brand-name">Daily x Paper</span>
+            <span className="brand-name">Stussy</span>
+            <span className="brand-name">Vetements</span>
+            <span className="brand-name">Bape</span>
+            <span className="brand-name">Carhartt</span>
+            <span className="brand-name">Nike</span>
+            <span className="brand-name">North Face</span>
+            <span className="brand-name">Comme des Garcons</span>
+            <span className="brand-name">Air Jordan</span>
          
         </div>
       </header>
