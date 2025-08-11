@@ -14,11 +14,13 @@ header {
 
 
 .logo-name{
+  font-size: 1.1rem;
   font-weight: 600;
   text-align: right;
   width: 60%;
 }
 .toggle-menu{
+  font-size: 1.05rem;
   width: 35%;
   text-align: right;
   padding-right: 1rem ;
@@ -45,7 +47,7 @@ nav {
   height: 100%;
   top: 0;
   right: -100%;
-  background-color: rgb(245, 245, 220);
+  background-color:rgb(231, 231, 231);
   padding: 1rem;
 
 }
