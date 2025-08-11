@@ -85,8 +85,11 @@ import { useState } from "react"
             <span className="brand-name">Stussy</span>
             <span className="brand-name">Vetements</span>
             <span className="brand-name">Bape</span>
+            <span className="brand-name">Carhartt</span>
             <span className="brand-name">Nike</span>
             <span className="brand-name">North Face</span>
+            <span className="brand-name">Comme des Garcons</span>
+            <span className="brand-name">Air Jordan</span>
          
         </div>
       </header>
@@ -94,8 +97,29 @@ import { useState } from "react"
 
       </main>
       <footer>
+          <div className="footer-info">
+              <h3>Join the club</h3> 
+              <span>Get early access to our latest products and sales</span> 
+              <input type="email" id="email" name="email" placeholder="Email Address:" /> 
+          </div>
+          <ul className="footer-menu">
+              <li className="footer-policy">
+                Contact Information
+              </li>
+              <li className="footer-policy">
+                Payment Policy
+              </li>
+              <li className="footer-policy">
+                Shipping Policy
+              </li>
+              <li className="footer-policy">
+                Terms and Conditions
+              </li>
+          </ul>
+          <div className="copy-rights">
+              <span>&copy; 2025 Gully Closet</span>
+          </div>
           
-
       </footer>
     </>
   )

@@ -77,9 +77,19 @@ nav {
   height: 35px;
   align-items: center;
   white-space: nowrap;
+  animation: scrollLeft 15s linear infinite;
+}
+
+@keyframes scrollLeft {
+  0% {
+    transform: translate(100%)
+  }
+  100% {
+    transform: translate(-100%);
+  }
 }
 .brand-name{
-  margin-right: 1rem;
+  margin-right: 2.5rem;
   font-size: small;
 }
 
@@ -94,4 +104,32 @@ nav {
 }
 .category-link li{
   color: rgb(77, 76, 76);
+}
+
+/*Footer*/
+
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  
+}
+.footer-info{
+  padding: 1rem;
+}
+.footer-info span{
+ font-size: small;
+}
+.footer-info input{
+  border: none;
+  border-radius: 10px;
+  width: 300px;
+  padding: 0.5rem;
+}
+.footer-policy{
+  border: 1px solid black;
+}
+.copy-rights{
+  width: 100%;
+  text-align: center;
 }
