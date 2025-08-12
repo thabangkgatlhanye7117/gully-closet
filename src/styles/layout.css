@@ -1,7 +1,7 @@
 /*HEADER*/
 
 header {
-  
+  background-color: rgb(230, 230, 230);
   position: fixed;
   top: 0;
   overflow-x: hidden;
@@ -113,10 +113,8 @@ nav {
 /*Footer*/
 
 footer {
-  position: fixed;
-  bottom: 0;
   width: 100%;
-  z-index: 0;
+  margin-top:2rem ;
 
   
 }

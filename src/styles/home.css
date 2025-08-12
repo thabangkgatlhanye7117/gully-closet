@@ -1,0 +1,73 @@
+/*Hero*/
+.home-page{
+
+  margin-top: 80px;
+  height: auto;
+  width: 100%;
+
+}
+.hero-section{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  background-color: black;
+  width: 100%;
+  height: 300px;
+}
+.hero-buttons{
+  display:flex;
+  justify-content: space-around;
+  position:absolute ;
+  bottom: 10px;
+  width: 80%;
+
+}
+.hero-btn{
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  background-color: whitesmoke;
+}
+
+/*New Arrivals*/
+.new-arrivals-section{
+ height: 800px;
+ position: relative;
+  
+
+}
+/*Business info*/
+.business-offerings-section{
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 500px; 
+}
+.business-offerings{
+  background-color: rgb(172, 170, 154);
+  width: 100%;
+  height: 300px;
+}
+.tagline{
+  
+  font-size: 1.5rem;
+  width:300px;
+  height: 150px;
+}
+.tagline span{
+  display: block;
+}
+
+.categories-section{
+  width:100% ;
+  height: 600px;
+}
+
+.clothing-categories{
+  width: 100%;
+  height: 50%;
+}
+.shoes-category{
+width: 100%;
+height: 50%;
+}

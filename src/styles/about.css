@@ -1,0 +1,7 @@
+.about-section{
+  display: grid;
+  width: 100%;
+  height:auto ;
+  padding: 1rem;
+  margin-top: 80px;
+}

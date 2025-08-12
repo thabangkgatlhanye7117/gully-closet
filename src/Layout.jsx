@@ -1,5 +1,5 @@
 import "./styles/layout.css"
-import {Link} from 'react-router-dom'
+import {Link, Outlet} from 'react-router-dom'
 import { useState } from "react"
 
 
@@ -29,7 +29,7 @@ import { useState } from "react"
               <ul className="nav-links">
                 <Link to = "/"><li>Home</li></Link>
                 <Link to = ""><li>All Products</li></Link>
-                <Link to = ""><li>About us</li></Link>
+                <Link to = "about"><li>About us</li></Link>
                 <a href=""><li>Categories</li></a>
               </ul>
 
@@ -103,8 +103,9 @@ import { useState } from "react"
         </div>
       </header>
       <main>
-
+          <Outlet/>
       </main>
+      
       <footer>
           <div className="footer-info">
               <h3>Join the club</h3> 

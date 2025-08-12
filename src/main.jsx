@@ -3,8 +3,11 @@ import { createRoot } from 'react-dom/client'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import './styles/index.css'
 import './styles/layout.css'
+import './styles/home.css'
+import './styles/about.css'
 import Layout from './Layout.jsx'
 import HomePage from './pages/HomePage'
+import AboutPage from './pages/AboutPage'
 import 'remixicon/fonts/remixicon.css'
 
 const router = createBrowserRouter([
@@ -12,6 +15,7 @@ const router = createBrowserRouter([
   path: "/", element: <Layout/>,
   children : [
     { index: true , element: <HomePage/> },
+    { path: "about" , element: <AboutPage/> },
   ]
 
 }
