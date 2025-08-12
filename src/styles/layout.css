@@ -126,9 +126,21 @@ footer {
 .footer-info span{
  font-size: small;
 }
+.footer-email{
+  display: flex;
+  background-color: white;
+  border: none;
+  width: 350px; 
+  border-radius: 10px;
+  overflow: hidden;
+}
+.send-email-address{
+  border: none;
+  background-color: white;
+  font-size: 1rem;
+}
 .footer-info input{
   border: none;
-  border-radius: 10px;
   width: 300px;
   padding: 0.5rem;
 }

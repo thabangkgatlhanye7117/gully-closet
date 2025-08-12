@@ -108,8 +108,13 @@ import { useState } from "react"
       <footer>
           <div className="footer-info">
               <h3>Join the club</h3> 
-              <span>Get early access to our latest products and sales</span> 
-              <input type="email" id="email" name="email" placeholder="Email Address:" /> 
+              <span>Get early access to our latest products and sales</span>
+              <div className="footer-email"> 
+                  <input type="email" id="email" name="email" placeholder="Email Address:" />
+                  <button className="send-email-address">
+                      <i className="ri-arrow-right-fill"></i>
+                  </button>
+              </div> 
           </div>
           <ul className="footer-menu">
               <li className="footer-policy">
