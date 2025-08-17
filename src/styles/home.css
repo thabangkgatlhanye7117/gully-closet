@@ -45,12 +45,21 @@
   display: grid;
   place-items: center;
   width: 100%;
-  height: 500px; 
+  height: 700px; 
 }
 .business-offerings{
+  display: grid;
   background-color: rgb(172, 170, 154);
   width: 100%;
-  height: 300px;
+  height: 100%;
+  padding: 1rem;
+  
+}
+.offering{
+  text-align: center;
+}
+.offering i{
+  font-size: 1.5rem;
 }
 .tagline{
   
