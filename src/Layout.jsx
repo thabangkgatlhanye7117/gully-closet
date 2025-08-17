@@ -1,4 +1,5 @@
 import "./styles/layout.css"
+import ScrollToTop from './components/ScrollToTop'
 import {Link, Outlet} from 'react-router-dom'
 import { useState } from "react"
 
@@ -19,18 +20,19 @@ import { useState } from "react"
 
   return (
     <>
+      <ScrollToTop/>
       <header className = "header">
         <nav>
           <div className="logo-name">GULLYCLOSET.</div>
 
           <div className= {`nav-menu ${menuVisible ? "show-menu": ""}`}>
 
-              <i className="ri-close-line close-menu"onClick={closeMenu}></i>
+              <i className="ri-close-line close-menu" onClick={closeMenu}></i>
               <ul className="nav-links">
-                <Link to = "/"><li>Home</li></Link>
-                <Link to = ""><li>All Products</li></Link>
-                <Link to = "about"><li>About us</li></Link>
-                <a href=""><li>Categories</li></a>
+                <Link to = "/"><li onClick={closeMenu}>Home</li></Link>
+                <Link to = ""><li onClick={closeMenu}>All Products</li></Link>
+                <Link to = "about" onClick={closeMenu}><li>About us</li></Link>
+                <a href=""><li onClick={closeMenu}>Categories</li></a>
               </ul>
 
               <ul className="category-links">

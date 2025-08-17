@@ -6,9 +6,9 @@ const AboutPage = () => {
         About us
       </h2>
       <p>
-            <b>Gully Closet</b> was established in 2016,<br/>
-            as a reselling and styling company by<br/>
-            Lethabo Pilane.
+            <b>Gully Closet</b><br/> Was established in 2016,
+            as a reselling and styling company by
+            Lethabo Pilane.<br/>
             
           
             Specializing in brands like Bape, Carhartt
