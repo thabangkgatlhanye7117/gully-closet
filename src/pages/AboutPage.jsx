@@ -2,16 +2,16 @@ const AboutPage = () => {
   return(
     <section className="about-section">
       <div className="about-info">
-      <h3 className="about-title">
+      <h2 className="about-title">
         About us
-      </h3>
+      </h2>
       <p>
             <b>Gully Closet</b> was established in 2016,<br/>
             as a reselling and styling company by<br/>
             Lethabo Pilane.
-            <br/>
-            <br/>
-            Specializing in brands in brands like Bape, Carhartt<br/>
+            
+          
+            Specializing in brands like Bape, Carhartt
             Daily x Paper, Nike, Vetements, Stussy and many more...
       </p>
       <p>
