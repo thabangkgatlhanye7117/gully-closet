@@ -1,4 +1,4 @@
-
+import categories from "../products/categories"
 
 const HomePage = () => {
 
@@ -48,11 +48,29 @@ const HomePage = () => {
                      <h3 className="categories-title">
                         Categories
                     </h3>
-                    <div className="clothing-categories">
+                    
+                        <div className="clothing-categories">
 
-                    </div>
-                    <div className="shops-category">
+                            {categories.map((category, index) =>(
+                          
+                        
 
+                              <div className="category-card" 
+                                   key={index}
+                                   style={{backgroundImage:`url(${category.image})`}}
+                               >
+                                <button className="category-btn">{category.name}</button>
+
+                              </div>  
+                        
+                            ))
+                            }
+
+
+                        </div>
+                    
+                    <div className="shoes-category">
+                            <button className="category-btn">SHOP SHOES</button>
                     </div>
                 </section>
                 

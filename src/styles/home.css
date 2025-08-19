@@ -73,9 +73,11 @@
   display: block;
 }
 
+/*categories*/
+
 .categories-section{
   width:100% ;
-  height: 600px;
+  height: 700px;
   
 }
 .categories-title{
@@ -83,10 +85,46 @@
 }
 
 .clothing-categories{
-  width: 100%;
-  height: 50%;
+  display: flex;
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+
 }
+
+.category-card{
+    background-color: rgb(211, 211, 211);
+    border-radius: 1rem;
+    min-width: 240px;
+    height: 250px;
+    background-size:contain ;
+    background-position: center;
+    background-repeat:no-repeat;
+    position: relative;
+    flex-shrink: 0;
+    scroll-snap-align: start;
+    display: flex;
+    align-items: flex-end;
+    overflow: hidden;
+    padding: 1rem;
+}
+.category-btn{
+  border: none;
+  border-radius: 5px;
+  height: 25px;
+  width:150px;
+  background-color: white;
+}
+
 .shoes-category{
-width: 100%;
-height: 50%;
+display: flex;
+margin-top: 2rem;
+align-items: flex-end;
+justify-content: center;
+background-image: url("/prada-shoes.png");
+background-size: contain;
+background-position: center;
+background-repeat: no-repeat;
+height: 40%;
 }
