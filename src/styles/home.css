@@ -34,12 +34,55 @@
 
 /*New Arrivals*/
 .new-arrivals-section{
- height: 800px;
+ width: 100%;
+ overflow-x: hidden;
+ height: auto;
  position: relative;
- padding: 1rem;
+ 
+  
+}
+
+.product-card{
+  display: grid;
+  place-items: center;
+  width: auto;
+  height: auto;
+}
+.product-img{
+  width:100%;
+  height:100%;
+}
+
+.img-container{
+  display: flex;
+  justify-content: center;
+  object-fit: contain;
+  width: 100%;
+ 
+}
+
+.new-arrival-products {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  overflow-x: hidden ;
   
 
 }
+.product-grid{
+  display: grid;
+  border: 1px solid black;
+  height: auto;
+  width: auto;
+}
+.product-card{
+  display:inline-block;
+
+}
+.card-info{
+  display: grid;
+}
+
+
 /*Business info*/
 .business-offerings-section{
   display: grid;

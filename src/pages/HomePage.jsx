@@ -1,8 +1,10 @@
 import categories from "../products/categories"
+import ProductDisplay from "../components/ProductDisplay"
+import newArrivals from "../products/newArrivals"
 
 const HomePage = () => {
 
-    return(
+    return (
 
         <article className ="home-page">
 
@@ -16,7 +18,15 @@ const HomePage = () => {
                     <h3 className="new-arrivals-title">
                         New Arrivals
                     </h3>
-                   {/*maping through new arrives two rows */}
+                    <div className="new-arrival-products">
+
+                        { newArrivals.map((product, i)=>(
+                            <ProductDisplay product={product} key={i} />
+
+                        ))}
+                        
+                     </div>
+                     
                 </section>
                 <section className="business-offerings-section">
                     <div className="business-offerings">
