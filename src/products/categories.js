@@ -2,7 +2,7 @@
   {
     name: "JACKETS / HOODIES",
     image:"/jackets-hoodies.png",
-    path: ""
+    path: "jackets"
 
   },
 

@@ -58,10 +58,15 @@
   justify-content: center;
   object-fit: contain;
   width: 100%;
+
+
  
 }
+.products-section{
+  margin-top: 100px;
+}
 
-.new-arrival-products {
+.products {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   overflow-x: hidden ;
@@ -70,7 +75,7 @@
 }
 .product-grid{
   display: grid;
-  border: 1px solid black;
+  border: 1px solid rgb(119, 118, 118);
   height: auto;
   width: auto;
 }
@@ -80,6 +85,26 @@
 }
 .card-info{
   display: grid;
+  width: 140px;
+  height: 150px ;
+  padding: 1rem;
+  gap: 1rem;
+  font-size:smaller;
+  text-align: center;
+}
+.card-info span{
+  display: block;
+}
+.card-button{
+  border: 1px solid grey;
+  border-radius: 7px;
+  font-size: 1rem;
+  font-weight: 700;
+  
+}
+.card-button:hover{
+  background-color: black;
+  color: white;
 }
 
 

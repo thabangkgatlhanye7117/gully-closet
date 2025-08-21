@@ -9,6 +9,8 @@ import './styles/components.css'
 import Layout from './Layout.jsx'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
+import JacketsPage from './pages/JacketsPage'
+
 import 'remixicon/fonts/remixicon.css'
 
 const router = createBrowserRouter([
@@ -17,6 +19,8 @@ const router = createBrowserRouter([
   children : [
     { index: true , element: <HomePage/> },
     { path: "about" , element: <AboutPage/> },
+    { path: "jackets" , element: <JacketsPage/> },
+
   ]
 
 }

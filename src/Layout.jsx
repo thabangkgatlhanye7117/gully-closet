@@ -1,6 +1,7 @@
 import "./styles/layout.css"
 import ScrollToTop from './components/ScrollToTop'
 import {Link, Outlet} from 'react-router-dom'
+import Footer from "./components/Footer"
 import { useState } from "react"
 
 
@@ -39,7 +40,7 @@ import { useState } from "react"
 
                   <div className="category-link">
                         <i className="ri-arrow-right-s-fill"></i>
-                        <Link to = "">
+                        <Link to = "jackets" onClick={closeMenu}>
                             <li>Jackets / Hoodies</li>
                         </Link>
                   </div>
@@ -76,6 +77,7 @@ import { useState } from "react"
                   
                     
               </ul>
+              <Footer/>
               
           </div>
           <div className="toggle-menu" onClick={toggleMenu}>
@@ -108,36 +110,7 @@ import { useState } from "react"
           <Outlet/>
       </main>
       
-      <footer>
-          <div className="footer-info">
-              <h3>Join the club</h3> 
-              <span>Get early access to our latest products and sales</span>
-              <div className="footer-email"> 
-                  <input type="email" id="email" name="email" placeholder="Email Address:" />
-                  <button className="send-email-address">
-                      <i className="ri-arrow-right-fill"></i>
-                  </button>
-              </div> 
-          </div>
-          <ul className="footer-menu">
-              <li className="footer-policy">
-                Contact Information
-              </li>
-              <li className="footer-policy">
-                Payment Policy
-              </li>
-              <li className="footer-policy">
-                Shipping Policy
-              </li>
-              <li className="footer-policy">
-                Terms and Conditions
-              </li>
-          </ul>
-          <div className="copy-rights">
-              <span>&copy; 2025 Gully Closet</span>
-          </div>
-          
-      </footer>
+      <Footer/>
     </>
   )
 }

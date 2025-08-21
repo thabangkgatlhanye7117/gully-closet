@@ -10,10 +10,9 @@ const ProductDisplay = ({product, i})=> {
                     </div>
                     <div className="card-info">
                         <span>{product.name}</span>
-                        <span>Price: {product.price}</span>
-                        <span>Size: {product.size}</span>
-                        <span>Condition: {product.condition}</span>
-                        <button>add to cart</button>
+                        <span> {product.price}</span>
+                        
+                        <button className="card-button">ADD TO CART</button>
                     </div>
 
 

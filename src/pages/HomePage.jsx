@@ -1,6 +1,7 @@
 import categories from "../products/categories"
 import ProductDisplay from "../components/ProductDisplay"
 import newArrivals from "../products/newArrivals"
+import { Link } from "react-router-dom"
 
 const HomePage = () => {
 
@@ -18,7 +19,7 @@ const HomePage = () => {
                     <h3 className="new-arrivals-title">
                         New Arrivals
                     </h3>
-                    <div className="new-arrival-products">
+                    <div className="products">
 
                         { newArrivals.map((product, i)=>(
                             <ProductDisplay product={product} key={i} />
@@ -69,7 +70,7 @@ const HomePage = () => {
                                    key={index}
                                    style={{backgroundImage:`url(${category.image})`}}
                                >
-                                <button className="category-btn">{category.name}</button>
+                                <Link to={category.path}><button className="category-btn">{category.name}</button></Link>
 
                               </div>  
                         
