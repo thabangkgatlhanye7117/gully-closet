@@ -46,32 +46,32 @@ import { useState } from "react"
                   </div>
                    <div className="category-link">
                         <i className="ri-arrow-right-s-fill"></i>
-                        <Link to = "">
+                        <Link to = "bottoms" onClick={closeMenu}>
                             <li>Bottoms</li>
                         </Link>
                   </div>
                    <div className="category-link">
                         <i className="ri-arrow-right-s-fill"></i>
-                        <Link to = "">
+                        <Link to = "sweaters" onClick={closeMenu}>
                             <li>Sweatshirts</li>
                         </Link>
                   </div>
                    <div className="category-link">
                         <i className="ri-arrow-right-s-fill"></i>
-                        <Link to = "">
+                        <Link to = "tshirts" onClick={closeMenu}>
                             <li>T-shirts / Tops</li>
                         </Link>
                   </div>
                    <div className="category-link">
                         <i className="ri-arrow-right-s-fill"></i>
-                        <Link to = "">
+                        <Link to = "fleece"  onClick={closeMenu} >
                             <li>Fleece / Knitwear</li>
                         </Link>
                   </div>
                    <div className="category-link">
                         <i className="ri-arrow-right-s-fill"></i>
-                        <Link to = "">
-                            <li>Footwear / Caps</li>
+                        <Link to = "caps"  onClick={closeMenu}>
+                            <li>Head Gear</li>
                         </Link>
                   </div>
                   

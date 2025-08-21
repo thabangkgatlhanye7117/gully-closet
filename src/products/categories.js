@@ -9,35 +9,35 @@
   {
     name: "HEAD GEAR",
     image:"/caps.webp",
-    path: ""
+    path: "caps"
 
   },
 
   {
     name: "BOTTOMS",
     image:"/bottoms.webp",
-    path: ""
+    path: "bottoms"
 
   },
 
   {
     name: "SWEATSHIRTS",
     image:"/sweatshirts.webp",
-    path: ""
+    path: "sweaters"
 
   },
 
   {
     name: "T- SHIRTS / TOPS",
     image:"/tshirts.webp",
-    path: ""
+    path: "tshirts"
 
   },
 
   {
     name: "FLEECE / KNITWEAR",
     image:"/fleece.webp",
-    path: "/"
+    path: "fleece"
 
   },
 
