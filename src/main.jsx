@@ -5,7 +5,7 @@ import './styles/index.css'
 import './styles/layout.css'
 import './styles/home.css'
 import './styles/about.css'
-import './styles/components.css'
+import './styles/pages.css'
 import Layout from './Layout.jsx'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
@@ -15,8 +15,11 @@ import SweaterPage from './pages/SweaterPage.jsx'
 import TshirtsPage from './pages/TshirtsPage.jsx'
 import CapsPage from './pages/CapsPage.jsx'
 import FleecePage from './pages/FleecePage.jsx'
+import CartPage from './pages/CartPage.jsx'
+import ProductsPage from './pages/ProductsPage.jsx'
 
 import 'remixicon/fonts/remixicon.css'
+import ContextProvider from './Features/ContextProvider.jsx'
 
 const router = createBrowserRouter([
 {
@@ -30,6 +33,8 @@ const router = createBrowserRouter([
      { path: "tshirts" , element: <TshirtsPage/> },
      { path: "caps" , element: <CapsPage/> },
      { path: "fleece" , element: <FleecePage/> },
+     { path: "cart" , element: <CartPage/> },
+     { path: "products" , element: <ProductsPage/> },
 
   ]
 
@@ -37,7 +42,7 @@ const router = createBrowserRouter([
 ])
 
 createRoot(document.getElementById('root')).render(
-  <StrictMode>
+  <ContextProvider>
     <RouterProvider router = {router} />
-  </StrictMode>,
+  </ContextProvider>,
 )

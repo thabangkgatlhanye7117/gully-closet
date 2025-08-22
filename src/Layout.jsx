@@ -2,10 +2,14 @@ import "./styles/layout.css"
 import ScrollToTop from './components/ScrollToTop'
 import {Link, Outlet} from 'react-router-dom'
 import Footer from "./components/Footer"
-import { useState } from "react"
+import { useContext, useState } from "react"
+import { CartContext } from "./Features/ContextProvider"
+
 
 
   const Layout = () => {
+
+    const {cart} = useContext(CartContext)
 
     const [menuVisible, setMenuVisible] = useState(false);
 
@@ -31,7 +35,7 @@ import { useState } from "react"
               <i className="ri-close-line close-menu" onClick={closeMenu}></i>
               <ul className="nav-links">
                 <Link to = "/"><li onClick={closeMenu}>Home</li></Link>
-                <Link to = ""><li onClick={closeMenu}>All Products</li></Link>
+                <Link to = "products"><li onClick={closeMenu}>All Products</li></Link>
                 <Link to = "about" onClick={closeMenu}><li>About us</li></Link>
                 <a href=""><li onClick={closeMenu}>Categories</li></a>
               </ul>
@@ -80,8 +84,18 @@ import { useState } from "react"
               <Footer/>
               
           </div>
-          <div className="toggle-menu" onClick={toggleMenu}>
-              <i className="ri-menu-line"></i>
+          <div className="toggle-buttons">
+
+             <Link to="cart">
+                <button className="cart-button">
+                  <i className="ri-shopping-bag-fill"></i>
+                  <span>{cart.length}</span>
+                </button>
+              </Link>
+              <div className="toggle-menu" onClick={toggleMenu}>
+                  <i className="ri-menu-line"></i>
+              </div>
+
           </div>
         </nav>
         <div className="brand-names">

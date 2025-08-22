@@ -1,4 +1,9 @@
+import { useContext } from "react"
+import { CartContext } from "../Features/ContextProvider"
+
+
 const ProductDisplay = ({product, i})=> {
+    const { dispatch } = useContext(CartContext)
     return (
 
         <div className ="product-grid">
@@ -10,9 +15,9 @@ const ProductDisplay = ({product, i})=> {
                     </div>
                     <div className="card-info">
                         <span>{product.name}</span>
-                        <span> {product.price}</span>
+                        <span> R{product.price}</span>
                         
-                        <button className="card-button">ADD TO CART</button>
+                        <button className="card-button"onClick={()=> dispatch({type:"Add",product:product})}>ADD TO CART</button>
                     </div>
 
 
