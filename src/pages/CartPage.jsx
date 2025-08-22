@@ -30,7 +30,7 @@ import { totalPrice } from '../Features/CartReducer'
                   <div className="selected-product-info">
                       <div className="selected-product-heading">
                         <span className='selected-product-name'><b>{product.name}</b></span>
-                        <span>{product.price}</span>
+                        <span>R{product.price}</span>
                       </div>
                       <span>Size: {product.size}</span>
                       <span>Condition: {product.condition}</span>
