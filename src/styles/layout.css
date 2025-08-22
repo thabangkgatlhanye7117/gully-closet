@@ -162,7 +162,7 @@ footer {
   padding: 0.2rem;
 }
 .copy-rights{
-
+  display: grid;
   width: 100%;
   text-align: center;
 }

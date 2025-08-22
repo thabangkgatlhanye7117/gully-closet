@@ -11,7 +11,7 @@ const ProductDisplay = ({product, i})=> {
                    key={i}
                   >
                     <div className="img-container">
-                        <img className="product-img" src={product.image} alt="product image"/>
+                        <img className="product-img" src={product.image} alt="product image" loading="lazy"/>
                     </div>
                     <div className="card-info">
                         <span>{product.name}</span>

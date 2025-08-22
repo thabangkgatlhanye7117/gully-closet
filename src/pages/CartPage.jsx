@@ -25,7 +25,7 @@ import { totalPrice } from '../Features/CartReducer'
           {cart.map((product, i)=>(
                 <div className="cart-card" key={i} >
                   <div className="selected-product-img-container">
-                    <img src={product.image} className='selected-product-img' alt='selected product'/>
+                    <img loading='lazy' src={product.image} className='selected-product-img' alt='selected product'/>
                   </div>
                   <div className="selected-product-info">
                       <div className="selected-product-heading">

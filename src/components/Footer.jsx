@@ -27,6 +27,7 @@ const Footer = ()=>{
           </ul>
           <div className="copy-rights">
               <span>&copy; 2025 Gully Closet</span>
+              <a href="https://bullasoft.vercel.app"><span>Powered by Bullasoft</span></a>
           </div>
           
       </footer>
