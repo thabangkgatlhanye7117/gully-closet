@@ -41,6 +41,9 @@
  
   
 }
+.new-arrivals-title{
+  margin-left: 1rem;
+}
 
 .product-card{
   display: grid;
