@@ -17,9 +17,9 @@ import CapsPage from './pages/CapsPage.jsx'
 import FleecePage from './pages/FleecePage.jsx'
 import CartPage from './pages/CartPage.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
-
 import 'remixicon/fonts/remixicon.css'
 import ContextProvider from './Features/ContextProvider.jsx'
+import ProductViewPage from './pages/ProductViewPage.jsx'
 
 const router = createBrowserRouter([
 {
@@ -30,11 +30,12 @@ const router = createBrowserRouter([
     { path: "jackets" , element: <JacketsPage/> },
     { path: "bottoms" , element: <BottomsPage/> },
     { path: "sweaters" , element: <SweaterPage/> },
-     { path: "tshirts" , element: <TshirtsPage/> },
-     { path: "caps" , element: <CapsPage/> },
-     { path: "fleece" , element: <FleecePage/> },
-     { path: "cart" , element: <CartPage/> },
-     { path: "products" , element: <ProductsPage/> },
+    { path: "tshirts" , element: <TshirtsPage/> },
+    { path: "caps" , element: <CapsPage/> },
+    { path: "fleece" , element: <FleecePage/> },
+    { path: "cart" , element: <CartPage/> },
+    { path: "products" , element: <ProductsPage/> },
+    { path: "product-view" , element: <ProductViewPage/> },
 
   ]
 

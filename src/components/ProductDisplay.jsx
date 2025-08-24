@@ -1,5 +1,6 @@
 import { useContext } from "react"
 import { CartContext } from "../Features/ContextProvider"
+import { Link } from "react-router-dom"
 
 
 const ProductDisplay = ({product, i})=> {
@@ -10,14 +11,17 @@ const ProductDisplay = ({product, i})=> {
               <div className ="product-card"
                    key={i}
                   >
+                   
                     <div className="img-container">
                         <img className="product-img" src={product.image} alt="product image" loading="lazy"/>
                     </div>
                     <div className="card-info">
                         <span>{product.name}</span>
                         <span> R{product.price}</span>
-                        
-                        <button className="card-button"onClick={()=> dispatch({type:"Add",product:product})}>ADD TO CART</button>
+                    </div>
+                    <div className="card-buttons">
+                         <Link to="product-view"><button className="view-item-button">View Item</button></Link>
+                         <button className="card-button"onClick={()=> dispatch({type:"Add",product:product})}>Add to cart</button>
                     </div>
 
 
