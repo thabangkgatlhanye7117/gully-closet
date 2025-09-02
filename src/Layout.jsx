@@ -9,7 +9,7 @@ import { CartContext } from "./Features/ContextProvider"
 
   const Layout = () => {
 
-    const {cart} = useContext(CartContext)
+    const {state} = useContext(CartContext)
 
     const [menuVisible, setMenuVisible] = useState(false);
 
@@ -89,7 +89,7 @@ import { CartContext } from "./Features/ContextProvider"
              <Link to="cart">
                 <button className="cart-button">
                   <i className="ri-shopping-bag-fill"></i>
-                  <span>{cart.length}</span>
+                  <span>{state.cart.length}</span>
                 </button>
               </Link>
               <div className="toggle-menu" onClick={toggleMenu}>

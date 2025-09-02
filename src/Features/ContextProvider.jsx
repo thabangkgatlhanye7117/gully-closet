@@ -1,16 +1,22 @@
 import React, { createContext, useReducer } from 'react'
-import CartReducer from './CartReducer'
-import newArrivals from '../products/newArrivals'
+import Reducer from './Reducer'
+import Products from '../products/Products'
 
 
 export const CartContext = createContext()
 
+const initialState = {
+  products:[],
+  selectedProducts: null,
+  cart:[]
+}
+
 const ContextProvider = ({children}) => {
-    const allProducts = newArrivals
-    const [cart, dispatch] = useReducer(CartReducer,[])
+    
+    const [state, dispatch] = useReducer(Reducer, initialState)
 
   return (
-    <CartContext.Provider value ={{cart, dispatch, allProducts}}>
+    <CartContext.Provider value ={{state, dispatch}}>
         {children}
     </CartContext.Provider>
   )

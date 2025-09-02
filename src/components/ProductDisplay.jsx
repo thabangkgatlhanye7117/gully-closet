@@ -1,10 +1,16 @@
 import { useContext } from "react"
 import { CartContext } from "../Features/ContextProvider"
-import { Link } from "react-router-dom"
+import { useNavigate } from "react-router-dom"
 
 
 const ProductDisplay = ({product, i})=> {
     const { dispatch } = useContext(CartContext)
+    const navigate = useNavigate();
+
+    const handleViewItem = (product)=>{
+         dispatch({type: "selectedProduct", product:product}),
+         navigate("/product-view")
+    }
     return (
 
         <div className ="product-grid">
@@ -20,8 +26,10 @@ const ProductDisplay = ({product, i})=> {
                         <span> R{product.price}</span>
                     </div>
                     <div className="card-buttons">
-                         <Link to="product-view"><button className="view-item-button">View Item</button></Link>
-                         <button className="card-button"onClick={()=> dispatch({type:"Add",product:product})}>Add to cart</button>
+                         
+                        <button className="view-item-button" onClick={()=>{handleViewItem(product)}}>View Item</button>
+                         
+                         <button className="card-button"onClick={() => dispatch({ type:"Add", product:product})}>Add to cart</button>
                     </div>
 
 

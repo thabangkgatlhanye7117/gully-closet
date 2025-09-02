@@ -1,4 +1,4 @@
-const newArrivals =
+const Products =
  [
    {
       id: 1,
@@ -6,7 +6,8 @@ const newArrivals =
       size:"4(Large)",
       price: 4500,
       condition:"10/10",
-      image:"/moncler.webp"
+      image:"/moncler.webp",
+      category:"Jackets"
   },
 
   {
@@ -15,7 +16,8 @@ const newArrivals =
       size:"4(Large)",
       price: 3599,
       condition:"10/10",
-      image:"/moncler2.webp"
+      image:"/moncler2.webp",
+      category:"Jackets"
   },
 
   {
@@ -24,7 +26,8 @@ const newArrivals =
       size:"Medium",
       price: 2300,
       condition:"10/10",
-      image:"/dailyxpaper1.webp"
+      image:"/dailyxpaper1.webp",
+      category:"Jackets"
   },
 
   {
@@ -33,7 +36,8 @@ const newArrivals =
       size:"Medium",
       price: 1300,
       condition:"10/10",
-      image:"/stone-island.webp"
+      image:"/stone-island.webp",
+      category:"Sweatshirts"
   },
 
   {
@@ -42,10 +46,11 @@ const newArrivals =
       size:"Large",
       price: 800,
       condition:"10/10",
-      image:"/stussy1.webp"
+      image:"/stussy1.webp",
+      category:"T-shirts"
   },
 
 
 
 ]
-export default newArrivals
+export default Products

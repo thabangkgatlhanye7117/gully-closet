@@ -1,6 +1,6 @@
 import React, {useState} from "react"
 import ProductDisplay from "../components/ProductDisplay"
-import newArrivals from "../products/newArrivals" /*change import */
+import Products from "../products/Products"
 
 const ProductsPage = ()=>{
   const [products, setProducts] = useState(newArrivals.products)
@@ -9,7 +9,7 @@ const ProductsPage = ()=>{
       <section className="products-section">
         <h3>Shop</h3>
         <div className="products">
-          { newArrivals.map((product, i)=>(
+          { Products.map((product, i)=>(
                                 <ProductDisplay product={product} key={i} />
     
                             ))}

@@ -1,5 +1,5 @@
 import ProductDisplay from "../components/ProductDisplay"
-import newArrivals from "../products/newArrivals" /*change import */
+import Products from "../products/Products"
 
 const FleecePage = ()=>{
   return(
@@ -7,7 +7,7 @@ const FleecePage = ()=>{
       <section className="products-section">
         <h3>Fleece / Knitweear</h3>
         <div className="products">
-          { newArrivals.map((product, i)=>(
+          { Products.map((product, i)=>(
                                 <ProductDisplay product={product} key={i} />
     
                             ))}

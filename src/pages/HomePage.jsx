@@ -1,6 +1,6 @@
 import categories from "../products/categories"
 import ProductDisplay from "../components/ProductDisplay"
-import newArrivals from "../products/newArrivals"
+import Products from "../products/Products"
 import { Link } from "react-router-dom"
 
 const HomePage = () => {
@@ -21,7 +21,7 @@ const HomePage = () => {
                     </h3>
                     <div className="products">
 
-                        { newArrivals.map((product, i)=>(
+                        { Products.map((product, i)=>(
                             <ProductDisplay product={product} key={i} />
 
                         ))}

@@ -1,11 +1,11 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../Features/ContextProvider'
-import { totalPrice } from '../Features/CartReducer'
+import { totalPrice } from '../Features/Reducer'
 
 
 
  const CartPage = () => {
-  const {cart, dispatch} = useContext(CartContext)
+  const {state, dispatch} = useContext(CartContext)
 
   return (
     <div  className='cart-page'>
@@ -13,16 +13,16 @@ import { totalPrice } from '../Features/CartReducer'
         <div className="cart-heading">
             <div>
             <h2>Cart</h2>
-            <span className='cart-amount-items'>{cart.length}</span>
+            <span className='cart-amount-items'>{state.cart.length}</span>
             </div>
             <div>
             <h2>Total</h2>
-            <span className='total-amount'>R{totalPrice(cart)}</span>
+            <span className='total-amount'>R{totalPrice(state)}</span>
             </div>
         </div>
         <div className="selected-products">
 
-          {cart.map((product, i)=>(
+          {state.cart.map((product, i)=>(
                 <div className="cart-card" key={i} >
                   <div className="selected-product-img-container">
                     <img loading='lazy' src={product.image} className='selected-product-img' alt='selected product'/>
