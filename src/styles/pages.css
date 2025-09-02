@@ -78,21 +78,32 @@
 
 }
 .img-slider{
-  background-color: grey;
+  background-color: rgb(196, 196, 196);
   width:100%;
   height: 400px;
+  
+
+}
+.slider-img{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
 }
 .viewed-product-info{
-  display: grid;
-  width:100%,
+  place-items: center;
+  width:100%;
   height:auto;
   margin-top:1rem;
 }
 
-
+.viewed-product-category{
+  font-size: small;
+  color: grey;
+}
 .viewed-product-name{
  margin: 1rem;
- font-size: 2rem;
+ font-weight:500;
+ font-size: 1.5rem;
 }
 .viewed-product-price{
   margin: 1rem;
@@ -104,12 +115,14 @@
   margin: 1rem;
 }
 .viewed-product-buttons{
-
+  
+  width:100%;
 }
 .viewed-product-buttons button{
- border-radius: 10px;
+ border-radius: 5px;
+ border: none;
  background-color: black;
  color: white;
- width: 50%;
+ width: 100%;
  height: 40px;
 }
