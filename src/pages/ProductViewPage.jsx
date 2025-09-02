@@ -18,7 +18,7 @@ const ProductViewPage = () => {
            <div className= "viewed-product-size">{state.selectedProduct.size}</div>
            <div className="viewed-product-condition">{state.selectedProduct.condition}</div>
            <div className="viewed-product-buttons">
-              <button onClick={()=> dispatch({type:"Add", product:selectedProduct})}>ADD TO CART</button>
+              <button onClick={()=> dispatch({type:"Add", product:state.selectedProduct})}>ADD TO CART</button>
            </div>
 
        </div>
