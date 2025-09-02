@@ -45,6 +45,7 @@
   margin-left: 1rem;
 }
 
+/*ProductDisplay*/
 .product-card{
   display: grid;
   place-items: center;
@@ -106,7 +107,7 @@
 .card-button, .view-item-button {
   border: 1px solid grey;
   border-radius: 5px;
-  font-weight: 700;
+  
   
 }
 .card-button:hover{
