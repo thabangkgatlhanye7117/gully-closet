@@ -65,10 +65,11 @@ nav {
   height: 100%;
   top: 0;
   right: -100%;
-  background-color:rgb(197, 197, 197);
+  background-color:rgb(255, 255, 255, 0.2);
   z-index: 9999;
   padding: 1rem;
-  backdrop-filter: blur(8px);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px)
 
 }
 
