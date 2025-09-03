@@ -28,7 +28,9 @@ import { CartContext } from "./Features/ContextProvider"
       <ScrollToTop/>
       <header className = "header">
         <nav>
-          <div className="logo-name">GULLYCLOSET.</div>
+          <div className="logo-name">
+               <Link to="/"><span>GULLYCLOSET.</span></Link>
+          </div>
 
           <div className= {`nav-menu ${menuVisible ? "show-menu": ""}`}>
 

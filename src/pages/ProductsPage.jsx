@@ -3,7 +3,7 @@ import ProductDisplay from "../components/ProductDisplay"
 import Products from "../products/Products"
 
 const ProductsPage = ()=>{
-  const [products, setProducts] = useState(newArrivals.products)
+  
   return(
     
       <section className="products-section">
