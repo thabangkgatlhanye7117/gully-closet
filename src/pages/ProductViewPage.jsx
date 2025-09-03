@@ -3,8 +3,8 @@ import React, { useContext } from 'react'
 import { CartContext } from '../Features/ContextProvider'
 
 const ProductViewPage = () => {
-  const {state, dispatch} = useContext(CartContext);
-
+  const {state, dispatch} = useContext(CartContext)
+  
   
   return (
     <div className="product-view-page">

@@ -7,23 +7,33 @@ export const totalPrice = (state)=>{
 const Reducer = (state, action)=>{
     switch(action.type){
       case "Add":
+        
+        const updatedCart = [...state.cart, action.product];
+              localStorage.setItem("cart", JSON.stringify(updatedCart))
+
         return {
                 ...state,
-                cart:[...state.cart, action.product]
+                cart: updatedCart
               }
 
       case "Remove":
+
+        const filteredCart = state.cart.filter( product => product.id !== action.id)
+               localStorage.setItem("cart", JSON.stringify(filteredCart))
+
         return {
                 ...state,
-                  cart: state.cart.filter( product => product.id !== action.id)
+                  cart: filteredCart
               }
 
       case "selectedProduct":
+              localStorage.setItem("selectedProduct", JSON.stringify(action.product))
         return {
                  ...state, selectedProduct: action.product
               }
 
       case "clearSelectedProduct":
+             localStorage.removeItem("selectedProduct", )
         return {
                   ...state, selectedProduct: null
               }

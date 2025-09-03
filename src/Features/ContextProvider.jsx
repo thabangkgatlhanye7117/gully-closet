@@ -6,9 +6,9 @@ import Products from '../products/Products'
 export const CartContext = createContext()
 
 const initialState = {
-  products:[],
-  selectedProducts: null,
-  cart:[]
+  
+  selectedProduct: JSON.parse(localStorage.getItem("selectedProduct")) || null,
+  cart: JSON.parse(localStorage.getItem("cart")) || []
 }
 
 const ContextProvider = ({children}) => {
