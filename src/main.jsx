@@ -7,7 +7,7 @@ import './styles/home.css'
 import './styles/about.css'
 import './styles/pages.css'
 import './styles/components.css'
-import './styles/ios-reset.css'
+
 
 import Layout from './Layout.jsx'
 import HomePage from './pages/HomePage'
