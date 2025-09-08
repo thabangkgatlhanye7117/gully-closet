@@ -91,6 +91,7 @@ const CheckOutForm = () => {
              value= {formData.surname}
              onChange={handleChange}
              autoComplete='family-name'
+             required
           />
           <input
              type="tel"
@@ -99,6 +100,7 @@ const CheckOutForm = () => {
              value={formData.phone}
              onChange={handleChange}
              autoComplete="tel"
+             required
           />
           <input
              type="email"
@@ -107,6 +109,7 @@ const CheckOutForm = () => {
              value={formData.email}
              onChange={handleChange}
              autoComplete='email'
+             required
           />
 
           <div className="shipping-form-radio">
@@ -167,6 +170,7 @@ const CheckOutForm = () => {
                          value={formData.delivery_info.street}
                          onChange={handleChange}
                          autoComplete="street-address"
+                         required
                        />
                         <input
                          placeholder="City"
@@ -175,6 +179,7 @@ const CheckOutForm = () => {
                          value={formData.delivery_info.city}
                          onChange={handleChange}
                          autoComplete="address-level2"
+                         required
                        />
                         <input
                          placeholder="Province"
@@ -183,6 +188,7 @@ const CheckOutForm = () => {
                          value={formData.delivery_info.province}
                          onChange={handleChange}
                          autoComplete="address-level1"
+                         required
                        />
                         <input
                          placeholder="Postal Code"
@@ -191,6 +197,7 @@ const CheckOutForm = () => {
                          value={formData.delivery_info.postalCode}
                          onChange={handleChange}
                          autoComplete="postal-code"
+                         required
                        />
 
                     </div>
@@ -205,6 +212,7 @@ const CheckOutForm = () => {
                         type="text"
                         value={formData.delivery_info.pepStore}
                         onChange={handleChange}
+                        required
                     />
                   )}
 
@@ -215,6 +223,7 @@ const CheckOutForm = () => {
                         type="text"
                         value={formData.delivery_info.pudoLocker}
                         onChange={handleChange}
+                        required
                     />
                   )}
               </div>
