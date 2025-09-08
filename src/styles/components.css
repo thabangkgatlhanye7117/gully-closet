@@ -68,9 +68,7 @@
 
 /*Shipping info*/
 
-.shipping-delivery{
-  padding: 1rem;
-}
+
 .checkout-form{
   display: grid;
   row-gap: 1rem;
@@ -104,7 +102,7 @@
 .delivery-method-div{
   display: flex;
   flex-direction: column;
-  width: 80%;
+  width: 100%;
 }
 .delivery-methods{
   border: none;
@@ -115,5 +113,6 @@
 .home-address-form input{
   display: flex;
   flex-direction: column;
- margin-top: 1rem;
+  margin-top: 1rem;
+  width: 90%;
 }
