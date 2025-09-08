@@ -1,6 +1,6 @@
  const categories = [
   {
-    name: "JACKETS / HOODIES",
+    name: "JACKETS",
     image:"/jackets-hoodies.png",
     path: "jackets"
 
@@ -35,7 +35,7 @@
   },
 
   {
-    name: "FLEECE / KNITWEAR",
+    name: "FLEECE",
     image:"/fleece.webp",
     path: "fleece"
 
