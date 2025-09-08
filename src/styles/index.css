@@ -13,6 +13,9 @@ ul {
   padding: 0;
   list-style-type: none;
 }
+/*IOS REMOVE DEFAULT BEHAVIOURS*/
+input,
+
 
 html,
 body {
