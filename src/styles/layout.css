@@ -15,7 +15,7 @@ header {
 
 
 .logo-name{
-  font-size: 1.1rem;
+  font-size: 1.4rem;
   font-weight: 600;
   text-align: right;
   width: 70%;
@@ -74,10 +74,14 @@ nav {
 }
 
 .nav-links{
-  margin-top: 3rem;
+ margin-top: 3rem;
  padding-left: 2.5rem;
  font-size: 1.5rem;
  font-weight:500;
+}
+.nav-links li:hover{
+  border-bottom: 3px solid grey;
+  
 }
 
 
@@ -121,10 +125,14 @@ nav {
 }
 .category-link i{
   margin-right: 2rem;
-  color: rgb(77, 76, 76);
+  color: black;
 }
 .category-link li{
-  color: rgb(77, 76, 76);
+  color: black;
+}
+.category-link li:hover{
+  border-bottom: 3px solid grey;
+  
 }
 
 /*Footer*/

@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import { CartContext } from '../Features/ContextProvider'
 import { totalPrice } from '../Features/Reducer'
+import { Link } from 'react-router-dom'
 
 
 
@@ -39,6 +40,7 @@ import { totalPrice } from '../Features/Reducer'
                 </div>
 
           ))}
+           <Link to="/checkout"><button className='checkout-btn'>CHECKOUT</button></Link>
         </div>  
 
 

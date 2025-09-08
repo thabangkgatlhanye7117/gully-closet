@@ -3,7 +3,7 @@ const Products =
    {
       id: 1,
       name:"Matt Black Moncler Puffer Jacket",
-      size:"4(Large)",
+      size:"Large",
       price: 4500,
       condition:"10/10",
       image:"/moncler.webp",
@@ -13,7 +13,7 @@ const Products =
   {
        id: 2,
       name:"Black Moncler Bormes Gillet",
-      size:"4(Large)",
+      size:"Large",
       price: 3599,
       condition:"10/10",
       image:"/moncler2.webp",

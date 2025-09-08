@@ -45,75 +45,7 @@
   margin-left: 1rem;
 }
 
-/*ProductDisplay*/
-.product-card{
-  display: grid;
-  place-items: center;
-  width: auto;
-  height: auto;
-}
-.product-img{
-  width:100%;
-  height:100%;
-}
 
-.img-container{
-  display: flex;
-  justify-content: center;
-  object-fit: contain;
-  width: 100%;
-
-
- 
-}
-.products-section{
-  margin-top: 100px;
-}
-
-.products {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  overflow-x: hidden ;
-  
-
-}
-.product-grid{
-  display: grid;
-  border: 1px solid rgb(119, 118, 118);
-  height: auto;
-  width: auto;
-}
-.product-card{
-  display:inline-block;
-
-}
-.card-info{
-  display: grid;
-  width: 140px;
-  height: 65px ;
-  padding: 1rem;
-  gap: 1rem;
-  font-size:smaller;
-  text-align: center;
-}
-.card-info span{
-  display: block;
-}
-.card-buttons{
- display: flex;
- gap: 1rem;
- padding: 1rem;
-}
-.card-button, .view-item-button {
-  border: 1px solid grey;
-  border-radius: 5px;
-  
-  
-}
-.card-button:hover{
-  background-color: black;
-  color: white;
-}
 
 
 /*Business info*/

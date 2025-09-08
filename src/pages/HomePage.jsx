@@ -11,8 +11,8 @@ const HomePage = () => {
 
                 <section className="hero-section">
                     <div className="hero-buttons">
-                        <button className="hero-btn">SHOP APPAREL</button>
-                        <button className="hero-btn">SHOP FOOTWEAR</button>
+                       <Link to="products"><button className="hero-btn">SHOP APPAREL</button></Link>
+                       <Link to="footwear"><button className="hero-btn">SHOP FOOTWEAR</button></Link>
                     </div>
                 </section>
                 <section className="new-arrivals-section">
@@ -81,7 +81,7 @@ const HomePage = () => {
                         </div>
                     
                     <div className="shoes-category">
-                            <button className="category-btn">SHOP SHOES</button>
+                            <Link to="footwear"><button className="category-btn">SHOP SHOES</button></Link>
                     </div>
                 </section>
                 

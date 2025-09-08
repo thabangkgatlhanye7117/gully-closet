@@ -6,6 +6,8 @@ import './styles/layout.css'
 import './styles/home.css'
 import './styles/about.css'
 import './styles/pages.css'
+import './styles/components.css'
+
 import Layout from './Layout.jsx'
 import HomePage from './pages/HomePage'
 import AboutPage from './pages/AboutPage'
@@ -17,14 +19,19 @@ import CapsPage from './pages/CapsPage.jsx'
 import FleecePage from './pages/FleecePage.jsx'
 import CartPage from './pages/CartPage.jsx'
 import ProductsPage from './pages/ProductsPage.jsx'
+import CheckOutPage from './pages/CheckOutPage.jsx'
 import 'remixicon/fonts/remixicon.css'
 import ContextProvider from './Features/ContextProvider.jsx'
 import ProductViewPage from './pages/ProductViewPage.jsx'
+import FootwearPage from './pages/FootwearPage.jsx'
+
+
 
 const router = createBrowserRouter([
 {
   path: "/", element: <Layout/>,
   children : [
+
     { index: true , element: <HomePage/> },
     { path: "about" , element: <AboutPage/> },
     { path: "jackets" , element: <JacketsPage/> },
@@ -36,6 +43,8 @@ const router = createBrowserRouter([
     { path: "cart" , element: <CartPage/> },
     { path: "products" , element: <ProductsPage/> },
     { path: "product-view" , element: <ProductViewPage/> },
+    { path: "checkout" , element: <CheckOutPage/> },
+    { path: "footwear" , element: <FootwearPage/> },
 
   ]
 

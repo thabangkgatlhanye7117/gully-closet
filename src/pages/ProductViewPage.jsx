@@ -1,11 +1,13 @@
 
 import React, { useContext } from 'react'
 import { CartContext } from '../Features/ContextProvider'
+import { Link } from 'react-router-dom'
+
 
 const ProductViewPage = () => {
   const {state, dispatch} = useContext(CartContext)
-  
-  
+ 
+ 
   return (
     <div className="product-view-page">
        <div className="img-slider">
@@ -19,7 +21,9 @@ const ProductViewPage = () => {
            <div className="viewed-product-condition">{state.selectedProduct.condition}</div>
            <div className="viewed-product-buttons">
               <button onClick={()=> dispatch({type:"Add", product:state.selectedProduct})}>ADD TO CART</button>
+              <Link to="/checkout"><button>CHECKOUT</button></Link>
            </div>
+           
 
        </div>
     </div>
