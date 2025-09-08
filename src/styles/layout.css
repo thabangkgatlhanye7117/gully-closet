@@ -69,7 +69,9 @@ nav {
   z-index: 9999;
   padding: 1rem;
   backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px)
+  -webkit-backdrop-filter: blur(10px);
+  overflow-y:auto;
+  -webkit-overflow-scrolling: touch;
 
 }
 
