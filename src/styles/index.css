@@ -15,6 +15,11 @@ ul {
 }
 /*IOS REMOVE DEFAULT BEHAVIOURS*/
 input,
+textarea,
+select,button{
+  font-size: 16px;
+  background-color: white;
+}
 
 
 html,
