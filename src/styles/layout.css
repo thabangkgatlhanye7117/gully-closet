@@ -61,8 +61,8 @@ nav {
 
 .nav-menu {
   position: fixed;
-  width: 90%;
-  height: 100%;
+  width: 100%;
+  height: 90%;
   top: 0;
   right: -100%;
   background-color:rgb(255, 255, 255, 0.2);
@@ -76,8 +76,8 @@ nav {
 .nav-links{
  margin-top: 3rem;
  padding-left: 2.5rem;
- font-size: 1.5rem;
- font-weight:500;
+ font-size: 1.7rem;
+ font-weight:700;
 }
 .nav-links li:hover{
   border-bottom: 3px solid grey;
