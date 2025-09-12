@@ -9,13 +9,15 @@ import { totalPrice } from '../Features/Reducer';
 const CheckOutForm = () => {
 
   const {state} = useContext(CartContext);
+  const amount = totalPrice(state);
+  const [isOpen, setIsOpen] = useState(false);
 
   const [formData, setFormData] = useState({
     name:"",
     surname:"",
     phone:"",
     email:"",
-    delivery:"collect",
+    delivery:"",
     delivery_method:"",
     delivery_info: {
       street: "",
@@ -46,9 +48,28 @@ const CheckOutForm = () => {
      }
   };
 
+  //validate form before submition
+  const validateFormData = () => {
+  //  required fields from formData
+  const { name, surname, email, phone, delivery } = formData;
+
+  // Check if any of them are empty
+  const allFilled = Object.values({ name, surname, email, phone, delivery })
+    .every(value => value.trim() !== "");
+
+  if (!allFilled) {
+    alert("Please fill in all required fields");
+    return false;
+  }
+
+  return true;
+};
+
   //handle pay now 
   const handlePayNow = ()=>{
-
+    
+   if (!validateFormData()) return;
+    
     //clean cart without images
     const cleanCart = state.cart.map((product)=>({
       id: product.id,
@@ -58,12 +79,19 @@ const CheckOutForm = () => {
 
     const orderData = {
       ...formData,
-      products: cleanCart
+      products: cleanCart,
+      amount : amount,
+      
       
     }
+    //toggle payment options
+    setIsOpen(prev => !prev);
+    //save to supabase
     console.log("Order submitted:", orderData)
     // save to supabase
   };
+
+
 
 
 
@@ -228,11 +256,16 @@ const CheckOutForm = () => {
                   )}
               </div>
           )}
-         
-          <div 
-              className='pay-toggle'
-              onClick={handlePayNow}
-          >Pay Now</div>
+          <div className='payment-methods'>
+              <div className='pay-toggle' onClick={handlePayNow}>Pay Now</div>
+              {isOpen && (
+                <div className='payment-options'>
+                    <div>Paystack</div>
+                    <div>Paypal</div>
+                </div>
+              )}
+          </div>
+          
         </form>
 
       </div>
