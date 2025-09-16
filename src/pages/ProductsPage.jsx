@@ -7,7 +7,7 @@ const ProductsPage = ()=>{
   return(
     
       <section className="products-section">
-        <h3>Shop</h3>
+        <h3>Shop All Products</h3>
         <div className="products">
           { Products.map((product, i)=>(
                                 <ProductDisplay product={product} key={i} />

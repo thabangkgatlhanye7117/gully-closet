@@ -170,8 +170,11 @@ footer {
   padding: 0.5rem;
 }
 .footer-policy{
-  border-top: 1px solid black;
+  border: 1px solid black;
   padding: 0.2rem;
+}
+.footer-contact{
+  
 }
 .copy-rights{
   display: grid;

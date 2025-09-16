@@ -32,6 +32,9 @@ body {
   scroll-behavior: smooth;
   background-color: rgb(230, 230, 230);
 }
+h3{
+  margin-left: 1rem;
+}
 
 
 

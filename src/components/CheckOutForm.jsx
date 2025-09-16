@@ -97,9 +97,9 @@ const CheckOutForm = () => {
 
   return (
      <div className= "shipping-delivery">
-        <h3>Shipping information</h3>
+        <h3>Customer information</h3>
         <span>
-             Please fill in shipping info
+             Please fill in the following:
         </span>
         <form className='checkout-form' action="post">
           <input
@@ -170,11 +170,20 @@ const CheckOutForm = () => {
                   
               </div>
           </div>
+          {/*view address  if collect is picked */}
+          {formData.delivery === "collect" &&(
+            <div className='collection-address-div'>
+                <span><b>Collection Address</b></span>
+                <span>XXX Fox street Johannesburg, GP</span>
+                <span>Open 11am - 16pm Call prior to collection.</span>
+            </div>
+          )}
           {/*view delivery methods if delivery is picked */}
           {formData.delivery === "delivery" && (
 
               <div className="delivery-method-div">
-
+                <div>
+                <div className='delivery-fee-banner'><span>Delivery fee will be added R200. 3-5 DAYS ETA</span></div>
                  <select 
                     className='delivery-methods'
                     name="delivery_method"
@@ -187,6 +196,7 @@ const CheckOutForm = () => {
                     <option value="pudo">PUDO Locker Delivery</option>
                  </select>
 
+                </div>
                  {/* view input according to selected delivery method/option*/}
 
                  {formData.delivery_method === "home" && (
