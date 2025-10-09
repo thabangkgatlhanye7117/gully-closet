@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useContext } from 'react';
 import { CartContext } from '../Features/ContextProvider';
 import { totalPrice } from '../Features/Reducer';
+import { supabase } from "../supabase-client";
 
 
 
@@ -13,6 +14,7 @@ const CheckOutForm = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const [formData, setFormData] = useState({
+    store_id:"ae4adc20-5e74-46dc-9b7a-f3ff7033d46f",
     name:"",
     surname:"",
     phone:"",
@@ -28,6 +30,43 @@ const CheckOutForm = () => {
       pudoLocker:"",
     },
   });
+
+
+
+  //Supa base function
+
+
+async function createOrder(orderData) {
+  const { data: order, error: error } = await supabase
+    .from("orders")
+    .insert([orderData])
+    .select("id")
+    .single();
+
+  if (error) {
+    console.error("Order insert error:", error);
+    return null;
+  }
+
+
+  return order.id;
+}
+
+async function insertOrderItems(order_Id, state){
+  const items = state.cart.map(item => {
+      
+  })
+
+  const {data, error} = await supabase
+  .from("order_items")
+  .insert(items)
+  .slect()
+  .single();
+}
+
+
+
+
 
   //handle input change
 
@@ -48,6 +87,10 @@ const CheckOutForm = () => {
      }
   };
 
+
+
+
+
   //validate form before submition
   const validateFormData = () => {
   //  required fields from formData
@@ -66,29 +109,32 @@ const CheckOutForm = () => {
 };
 
   //handle pay now 
-  const handlePayNow = ()=>{
+  async function handlePayNow() {
     
    if (!validateFormData()) return;
     
-    //clean cart without images
+    
     const cleanCart = state.cart.map((product)=>({
       id: product.id,
       name: product.name,
       price: product.price,
+      image: product.image
     }))
 
     const orderData = {
+      
       ...formData,
-      products: cleanCart,
-      amount : amount,
+     // products: cleanCart,
+      total_amount : amount,
       
       
     }
+     await createOrder(orderData);
     //toggle payment options
     setIsOpen(prev => !prev);
     //save to supabase
-    console.log("Order submitted:", orderData)
-    // save to supabase
+  
+    
   };
 
 
