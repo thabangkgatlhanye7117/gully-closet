@@ -34,8 +34,10 @@
   height: auto;
   width: auto;
 }
-.product-card{
+.product-card {
   display:inline-block;
+
+
 
 }
 .card-info{
@@ -49,6 +51,7 @@
 }
 .card-info span{
   display: block;
+  
 }
 .card-buttons{
  display: flex;
