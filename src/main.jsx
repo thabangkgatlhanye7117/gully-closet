@@ -21,6 +21,8 @@ import ProductsPage from './pages/ProductsPage.jsx'
 import 'remixicon/fonts/remixicon.css'
 import ContextProvider from './Features/ContextProvider.jsx'
 import ProductViewPage from './pages/ProductViewPage.jsx'
+import CheckOutPage from './pages/CheckOutPage.jsx'
+
 
 
 const router = createBrowserRouter([
@@ -38,6 +40,7 @@ const router = createBrowserRouter([
     { path: "cart" , element: <CartPage/> },
     { path: "products" , element: <ProductsPage/> },
     { path: "product-view" , element: <ProductViewPage/> },
+    { path: "checkout" , element: <CheckOutPage/> },
 
   ]
 
