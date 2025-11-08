@@ -6,7 +6,7 @@ const Footer = ()=>{
   const [isContactOpen, setIsContactOpen] = useState(false);
   const [isPaymentOpen, setIsPaymentOpen] = useState(false);
   const [isShippingOpen, setIsShippingOpen] = useState(false);
-  const [isTermsOpen, setIsTermsOpen] = useState(true);
+  const [isTermsOpen, setIsTermsOpen] = useState(false);
 
 
   const toggleContact = ()=>{
